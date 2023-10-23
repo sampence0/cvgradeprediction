@@ -42,7 +42,12 @@ The Portuguese Ministry of Health is interested in the following:
 
 ## Methodology
 
-The analysis uses cross-validation techniques for model selection. The criteria for model selection are based on minimizing the cross-validation error, specifically the Mean Squared Error (MSE).
+The analysis employs a two-step approach for model selection and validation:
+
+1. **Forward Selection**: We initially perform forward selection to identify a subset of predictors that contribute the most to explaining the variance in the final grades (`G3`). This method starts with no predictors and iteratively adds in variables that improve the model's performance based on a chosen criterion, such as the Cp statistic.
+
+2. **Cross-Validation**: After identifying the best subset of predictors, we use K-Fold Cross-Validation to assess the model's generalizability. This technique partitions the original training data set into 'K' equally sized folds. A model is trained on 'K-1' of these folds and validated on the remaining one. The process is repeated 'K' times, each time with a different fold serving as the validation set. The criterion for model selection is the Mean Squared Error (MSE), averaged over all 'K' folds.
+
 
 ## Results
 
