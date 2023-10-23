@@ -21,6 +21,7 @@ To get started, clone this repository to your local machine. The main script is 
 
 ```R
 install.packages(c("boot", "dplyr", "tidyverse", "readr", "corrplot", "caret", "leaps"))
+```
 
 ## Data Description
 
