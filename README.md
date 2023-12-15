@@ -4,17 +4,6 @@
 
 This repository contains an R script that conducts an empirical analysis of data on Portuguese secondary school students. The analysis aims to investigate the impact of various student characteristics, including alcohol consumption, on their test scores in Math and Portuguese subjects. The project was carried out as part of the E401/M518 Empirical Challenge for Fall 2023.
 
-## Table of Contents
-
-- [Getting Started](#getting-started)
-- [Data Description](#data-description)
-- [Policy Questions](#policy-questions)
-- [Methodology](#methodology)
-- [Results](#results)
-- [Discussion](#discussion)
-- [Future Steps](#future-steps)
-- [Conclusion](#conclusion)
-
 ## Getting Started
 
 To get started, clone this repository to your local machine. The main script is written in R and uses several packages, which you can install using the following commands:
@@ -42,8 +31,6 @@ The Portuguese Ministry of Health is interested in the following:
 
 ## Methodology
 
-The analysis employs a two-step approach for model selection and validation:
-
 1. **Forward Selection**: We initially perform forward selection to identify a subset of predictors that contribute the most to explaining the variance in the final grades (`G3`). This method starts with no predictors and iteratively adds in variables that improve the model's performance based on a chosen criterion, such as the Cp statistic.
 
 2. **Cross-Validation**: After identifying the best subset of predictors, we use K-Fold Cross-Validation to assess the model's generalizability. This technique partitions the original training data set into 'K' equally sized folds. A model is trained on 'K-1' of these folds and validated on the remaining one. The process is repeated 'K' times, each time with a different fold serving as the validation set. The criterion for model selection is the Mean Squared Error (MSE), averaged over all 'K' folds.
@@ -53,9 +40,6 @@ The analysis employs a two-step approach for model selection and validation:
 
 The results include models that predict the final grades (`G3`) in math and Portuguese subjects based on various student characteristics, including alcohol consumption levels.
 
-## Discussion
-
-The discussion elaborates on the policy implications of the models. It also includes the limitations of the current analysis and suggests steps for further studies.
 
 ## Future Steps
 
@@ -65,7 +49,5 @@ Further analysis could involve:
 - Incorporating additional data sources for a more comprehensive analysis.
 - Testing the robustness of the models to different conditions and assumptions.
 
-## Conclusion
 
-The analysis aims to provide comprehensive insights into the factors affecting student performance in Math and Portuguese subjects. It is intended to aid the Portuguese Ministry of Health in its policy decision-making.
 
