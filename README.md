@@ -1,4 +1,4 @@
-# E401/M518 Empirical Challenge: Cross Validation
+# M518 Empirical Challenge: Cross Validation
 
 ## Overview
 
